@@ -1,0 +1,54 @@
+.odometer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .digitWrapper {
+    overflow: hidden;
+    position: relative;
+
+    .digit {
+      position: absolute;
+      animation-duration: 4s;
+      animation-timing-function: ease;
+      animation-name: move;
+      display: block;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      transform: translateY(100%);
+      font-size: inherit;
+
+      span {
+        display: block;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translateY(0);
+        }
+        100% {
+          transform: translateY(calc(100%));
+        }
+      }
+
+      @keyframes revMove {
+        0% {
+          transform: translateY(calc(100%));
+        }
+        100% {
+          transform: translateY(0);
+        }
+      }
+    }
+  }
+
+  &.reverse {
+    .digit {
+      animation-name: revMove;
+      transform: translateY(0);
+    }
+  }
+}

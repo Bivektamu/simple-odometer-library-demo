@@ -1,0 +1,93 @@
+.App {
+  text-align: center;
+}
+
+body {
+  background-color: #fff;
+}
+
+.App-header {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #000;
+  width: 100%;
+  font-size: 40px;
+  font-weight: bold;
+  padding: 50px 0;
+  box-sizing: border-box;
+  @media screen and (max-width: 760px) {
+    font-size: 20px;
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+main {
+  .container1,
+  .container3 {
+    .odometer {
+      .digitWrapper {
+        color: beige;
+      }
+    }
+    padding: 100px 40px;
+    background: grey;
+    @media screen and (max-width: 760px) {
+      padding: 50px 20px;
+    }
+    .pre {
+      background: beige;
+      color: grey;
+      padding: 20px 40px;
+      border-radius: 10px;
+      margin: 20px auto;
+      display: inline-block;
+      -webkit-box-shadow: -3px 12px 15px 0px rgba(0, 0, 0, 0.59);
+      -moz-box-shadow: -3px 12px 15px 0px rgba(0, 0, 0, 0.59);
+      box-shadow: -3px 12px 15px 0px rgba(0, 0, 0, 0.59);
+      max-width: 100%;
+      .code {
+        max-width: 100%;
+        line-height: 1.6;
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+        @media screen and (max-width: 760px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+  .container2 {
+    padding: 100px 40px;
+    background: white;
+    @media screen and (max-width: 760px) {
+      padding: 50px 20px;
+    }
+    .pre {
+      background: grey;
+      color: white;
+      padding: 20px 40px;
+      border-radius: 10px;
+      margin: 40px auto;
+      display: inline-block;
+      -webkit-box-shadow: -3px 12px 15px 0px rgba(0, 0, 0, 0.59);
+      -moz-box-shadow: -3px 12px 15px 0px rgba(0, 0, 0, 0.59);
+      box-shadow: -3px 12px 15px 0px rgba(0, 0, 0, 0.59);
+      max-width: 100%;
+      .code {
+        max-width: 100%;
+        line-height: 1.6;
+        font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New";
+        @media screen and (max-width: 760px) {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+
+ 
+}
