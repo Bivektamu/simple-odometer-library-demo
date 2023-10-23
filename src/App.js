@@ -1,5 +1,5 @@
 import "./App.scss";
-import {Odometer} from './Odometer'
+import {Odometer} from 'react-simple-odometer'
 
 
 function App() {
